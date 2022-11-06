@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "RulesSchema",
+  "description": "Schema for validating rules.json file",
+  "type": "object",
+  "patternProperties": {
+    ".*": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "patternProperties": {
+            "text": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "metadata": {
+              "type": "object",
+              "patternProperties": {
+                ".*": {
+                  "type": [
+                    "string",
+                    "array"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": ["text", "metadata"],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

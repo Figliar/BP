@@ -1,0 +1,1 @@
+java -jar ReFormat.jar --config="Modules/src/main/resources/re/parsers/tika-config-bc.xml" %1

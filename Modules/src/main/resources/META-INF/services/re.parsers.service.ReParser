@@ -1,0 +1,6 @@
+re.parsers.pdf.MettlerParser
+re.parsers.pdf.AgilentPDFParser
+re.parsers.pdf.ShimadzuParser
+re.parsers.pdf.SpecordPDFParser
+re.parsers.csv.SpecordCSVParser
+re.parsers.xlsx.AgilentXLSXParser

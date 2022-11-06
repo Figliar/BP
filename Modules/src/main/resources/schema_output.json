@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "OutputSechema",
+  "description": "Schema for validating this project's outputs",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/part"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": ["string", "number", "boolean", "null"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["content", "metadata"],
+  "additionalProperties": false,
+
+  "$defs": {
+    "part": {
+      "type": "object",
+      "properties":{
+        "section_name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "patternProperties": {
+            ".*": {
+              "type": ["string", "number", "boolean", "null"]
+            }
+          }
+        }
+      },
+      "required": ["data"],
+      "patternProperties": {
+        "^table(_[1-9]+[0-9]*)?$": {
+          "type": "object"
+        }
+      },
+      "minProperties": 1,
+      "additionalProperties": false
+    }
+  }
+}

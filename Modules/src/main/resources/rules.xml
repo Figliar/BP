@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<decision_tree>
+    <pdf>
+        <parser id="ShimadzuParser">
+            <text>
+                <element value="Injection Volume"/>
+                <element value="Acquired"/>
+                <element value="by"/>
+                <element value="Column"/>
+                <element value="ID"/>
+                <element value="Length"/>
+                <element value="Method"/>
+                <element value="Name"/>
+                <element value="Processed"/>
+                <element value="Sample"/>
+                <element value="min"/>
+                <element value="mm"/>
+                <element value="Area"/>
+                <element value="Injection"/>
+            </text>
+            <metadata>
+                <element key="pdf:producer">
+                    <value value="SkyPDF Server MT 2016 Version 6.0.2 Build 2"/>
+                    <value value="GPL Ghostscript 8.70"/>
+                    <value value="SkyPDF Server MT 2010 Version 4.0.3 Build 4"/>
+                </element>
+            </metadata>
+        </parser>
+        <parser id="MettlerParser">
+            <text>
+                <element value="Name"/>
+                <element value="Sample ID"/>
+                <element value="Sample size"/>
+                <element value="Content R1"/>
+                <element value="State"/>
+                <element value="TitrationReport"/>
+                <element value="Titration"/>
+                <element value="Scope"/>
+                <element value="Curve"/>
+            </text>
+            <metadata>
+                <element key="dc:title" value="TitrationReport"/>
+                <element key="pdf:docinfo:producer" value="Microsoft: Print To PDF"/>
+            </metadata>
+        </parser>
+        <parser id="SpecordPDFParser">
+            <text>
+                <element value="Designation"/>
+                <element value="233H1210C"/>
+                <element value="Meas. mode"/>
+                <element value="Operator"/>
+                <element value="[nm]"/>
+                <element value="WinASPECT"/>
+                <element value="SPECORD"/>
+                <element value="Date/Time"/>
+                <element value="Display"/>
+                <element value="Parameters"/>
+                <element value="Reference"/>
+                <element value="PLUS"/>
+                <element value="Correction"/>
+            </text>
+            <metadata>
+
+            </metadata>
+        </parser>
+        <parser id="AgilentPDFParser">
+            <text>
+                <element value="Area"/>
+                <element value="Column"/>
+                <element value="Data"/>
+                <element value="date:"/>
+                <element value="file:"/>
+                <element value="Injection"/>
+                <element value="Time"/>
+                <element value="method:"/>
+                <element value="[min]"/>
+                <element value="name:"/>
+                <element value="Printed"/>
+                <element value="mm"/>
+                <element value="Printed:"/>
+                <element value="Sequence"/>
+                <element value="Serial"/>
+            </text>
+            <metadata>
+
+            </metadata>
+        </parser>
+    </pdf>
+    <xml>
+        <parser id="AgilentXLSXParser">
+            <text>
+                <element value="Acq. method"/>
+                <element value="Area"/>
+                <element value="Area%"/>
+                <element value="Column name"/>
+                <element value="Diameter"/>
+                <element value="Data file"/>
+                <element value="Height"/>
+                <element value="Location"/>
+                <element value="Processing method"/>
+                <element value="YMC basic S-5um"/>
+                <element value="QC-HPLC-2"/>
+                <element value="MBS_new.amx"/>
+            </text>
+            <metadata>
+
+            </metadata>
+        </parser>
+    </xml>
+    <csv>
+        <parser id="SpecordCSVParser">
+            <text>
+                <element value="[nm];[A];"/>
+            </text>
+            <metadata>
+
+            </metadata>
+        </parser>
+    </csv>
+</decision_tree>

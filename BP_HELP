@@ -1,0 +1,15 @@
+mvn clean: vymaze target
+mvn compile: vytvori zo source files => class files (vytvori target)
+mvn test-compile: vytvori test-classes v target
+mvn test: spusti test (v target/surefire-reports/textfile vysledky testov)
+mvn install: vytvori jar file 
+
+mvnrepository.com: pre mozne dependencies
+
+check files:cat -e -t -v file
+check files: xxd LIM.pdf | more 
+
+If you really do need to build the Tika Server from source (eg if you're going to be making changes to it), you can either skip the unit tests by running mvn install -DskipTests which will do the build with no tests, or you can edit pom.xml in the root of your source checkout and comment out the line <module>tika-bundle</module> to exclude the whole bundle section (tests and all) from your build. If you only want to use the Tika Server, then you don't need the OSGi bundle so can safely skip it
+
+java -classpath Modules/target:jar_files/gson-2.8.2.jar:tika-app/target/tika-app-2.0.0-SNAPSHOT.jar org.apache.tika.cli.TikaCLI --config=tika-config-bc.xml VZ1.pdf
+

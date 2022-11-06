@@ -1,0 +1,65 @@
+package re.parsers.csv;
+
+import org.json.simple.parser.ParseException;
+import re.parsers.classifier.Classifier;
+import re.parsers.config.ReConfig;
+import re.parsers.service.ReParser;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.mime.MediaType;
+import org.apache.tika.parser.AbstractParser;
+import org.apache.tika.parser.ParseContext;
+import org.apache.tika.parser.csv.TextAndCSVParser;
+import org.apache.tika.sax.TeeContentHandler;
+import org.apache.tika.sax.ToTextContentHandler;
+import org.xml.sax.ContentHandler;
+import org.xml.sax.SAXException;
+import re.parsers.Util_functions;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.ServiceLoader;
+import java.util.Set;
+
+public class CSVDecider extends AbstractParser {
+
+    static final MediaType MEDIA_TYPE = MediaType.text("csv");
+    private static final Set<MediaType> SUPPORTED_TYPES = Collections.singleton(MEDIA_TYPE);
+
+    @Override
+    public Set<MediaType> getSupportedTypes(ParseContext parseContext) {
+        return SUPPORTED_TYPES;
+    }
+
+    @Override
+    public void parse(InputStream inputStream, ContentHandler contentHandler, Metadata metadata, ParseContext parseContext) throws IOException, SAXException, TikaException {
+        ContentHandler handler = new ToTextContentHandler();
+        ContentHandler tee = new TeeContentHandler(handler, contentHandler);
+        TextAndCSVParser textAndCSVParser = new TextAndCSVParser();
+        ReConfig reConfig = new ReConfig();
+        Classifier classifier = new Classifier();
+
+        textAndCSVParser.parse(inputStream, tee, metadata, parseContext);
+        Util_functions.validateRules(reConfig);
+        String type = classifier.decideJSON(handler.toString(), metadata, "csv", reConfig.getRules());
+
+        ServiceLoader<ReParser> loader = ServiceLoader.load(ReParser.class);
+        Iterator<ReParser> iter = loader.iterator();
+
+        while(iter.hasNext()){
+            try {
+                ReParser p = iter.next();
+                if (p.getType().equals(type)) {
+                    p.parse(inputStream, handler, metadata);
+                    Util_functions.validateOutput(metadata, reConfig);
+                    break;
+                }
+            }
+            catch (IOException | TikaException | SAXException | NullPointerException | ParseException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}

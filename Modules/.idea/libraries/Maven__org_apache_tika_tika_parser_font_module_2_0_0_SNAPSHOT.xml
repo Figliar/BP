@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.tika:tika-parser-font-module:2.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parser-font-module/2.0.0-SNAPSHOT/tika-parser-font-module-2.0.0-20210315.210531-382.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parser-font-module/2.0.0-SNAPSHOT/tika-parser-font-module-2.0.0-20210315.210531-382-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parser-font-module/2.0.0-SNAPSHOT/tika-parser-font-module-2.0.0-20210315.210531-382-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

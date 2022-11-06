@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.tika:tika-parsers-classic-package:2.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers-classic-package/2.0.0-SNAPSHOT/tika-parsers-classic-package-2.0.0-20210315.211346-266.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers-classic-package/2.0.0-SNAPSHOT/tika-parsers-classic-package-2.0.0-20210315.211346-266-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers-classic-package/2.0.0-SNAPSHOT/tika-parsers-classic-package-2.0.0-20210315.211346-266-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

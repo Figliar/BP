@@ -1,0 +1,111 @@
+{
+  "pdf": {
+    "MettlerParser": {
+      "text": [
+        "Name",
+        "Sample ID",
+        "Sample size",
+        "Content R1",
+        "State",
+        "TitrationReport",
+        "Titration",
+        "Scope",
+        "Curve"
+      ],
+      "metadata": {
+        "dc:title": ["TitrationReport"],
+        "pdf:docinfo:producer": "Microsoft: Print To PDF"
+      }
+    },
+    "SpecordPDFParser": {
+      "text": [
+        "Designation",
+        "233H1210C",
+        "Meas. mode",
+        "Operator",
+        "[nm]",
+        "WinASPECT",
+        "SPECORD",
+        "Date/Time",
+        "Display",
+        "Parameters",
+        "Reference",
+        "PLUS",
+        "Correction"
+      ],
+      "metadata": {}
+    },
+    "AgilentPDFParser": {
+      "text": [
+        "Area",
+        "Column",
+        "Data",
+        "date:",
+        "file:",
+        "Injection",
+        "Time",
+        "method:",
+        "[min]",
+        "name:",
+        "Printed",
+        "mm",
+        "Printed:",
+        "Sequence",
+        "Serial"
+      ],
+      "metadata": {}
+    },
+    "ShimadzuParser": {
+      "text": [
+        "Injection Volume",
+        "Acquired",
+        "by",
+        "Column",
+        "ID",
+        "Length",
+        "Method",
+        "Name",
+        "Processed",
+        "Sample",
+        "min",
+        "mm",
+        "Area",
+        "Injection"
+      ],
+      "metadata": {
+        "pdf:producer": [
+          "SkyPDF Server MT 2016 Version 6.0.2 Build 2",
+          "GPL Ghostscript 8.70",
+          "SkyPDF Server MT 2010 Version 4.0.3 Build 4"
+        ]
+      }
+    }
+  },
+  "xlsx": {
+    "AgilentXLSXParser": {
+      "text": [
+        "Acq. method",
+        "Area",
+        "Area%",
+        "Column name",
+        "Diameter",
+        "Data file",
+        "Height",
+        "Location",
+        "Processing method",
+        "YMC basic S-5um",
+        "QC-HPLC-2",
+        "MBS_new.amx"
+      ],
+      "metadata": {}
+    }
+  },
+  "csv": {
+    "SpecordCSVParser": {
+      "text": [
+        "[nm];[A];"
+      ],
+      "metadata": {}
+    }
+  }
+}

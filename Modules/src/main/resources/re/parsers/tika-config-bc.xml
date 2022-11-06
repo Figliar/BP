@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties>
+  <!-- https://tika.apache.org/1.24.1/configuring.html -->
+  <!-- to utilize also dynamically loaded services and log a warning when providers fail to initialize -->
+  <service-loader dynamic="true" loadErrorHandler="WARN"/>
+  <parsers>
+    <parser class="org.apache.tika.parser.DefaultParser">
+      <mime-exclude>application/pdf</mime-exclude>
+      <mime-exclude>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</mime-exclude>
+      <mime-exclude>text/csv</mime-exclude>
+      <parser-exclude class="org.apache.tika.parser.pdf.PDFParser"/>
+      <parser-exclude class="org.apache.tika.parser.microsoft.ooxml.OOXMLParser"/>
+      <parser-exclude class="org.apache.tika.parser.csv.TextAndCSVParser"/>
+    </parser>
+    <parser class="re.parsers.pdf.PDFDecider">
+      <mime>application/pdf</mime>
+    </parser>
+    <parser class="re.parsers.xlsx.XLSXDecider">
+      <mime>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</mime>
+    </parser>
+    <parser class="re.parsers.csv.CSVDecider">
+      <mime>text/csv</mime>
+    </parser>
+  </parsers>
+</properties>
+

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.tika:tika-parser-mail-module:2.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parser-mail-module/2.0.0-SNAPSHOT/tika-parser-mail-module-2.0.0-20210315.211042-384.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parser-mail-module/2.0.0-SNAPSHOT/tika-parser-mail-module-2.0.0-20210315.211042-384-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parser-mail-module/2.0.0-SNAPSHOT/tika-parser-mail-module-2.0.0-20210315.211042-384-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

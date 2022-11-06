@@ -1,0 +1,13 @@
+re/parsers/classifier/Classifier.class
+re/parsers/pdf/PDFDecider.class
+re/parsers/csv/CSVDecider.class
+re/parsers/pdf/AgilentPDFParser.class
+re/parsers/pdf/MettlerParser.class
+re/parsers/pdf/SpecordPDFParser.class
+re/parsers/pdf/ShimadzuParser.class
+re/parsers/config/ReConfig.class
+re/parsers/Util_functions.class
+re/parsers/xlsx/XLSXDecider.class
+re/parsers/csv/SpecordCSVParser.class
+re/parsers/service/ReParser.class
+re/parsers/xlsx/AgilentXLSXParser.class

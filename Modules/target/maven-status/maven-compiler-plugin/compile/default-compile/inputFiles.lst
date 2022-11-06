@@ -1,0 +1,13 @@
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/xlsx/AgilentXLSXParser.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/service/ReParser.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/csv/CSVDecider.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/pdf/SpecordPDFParser.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/classifier/Classifier.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/csv/SpecordCSVParser.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/Util_functions.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/pdf/AgilentPDFParser.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/pdf/ShimadzuParser.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/pdf/PDFDecider.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/xlsx/XLSXDecider.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/config/ReConfig.java
+/home/rene/Desktop/Bakalarka/ReFormator/ReFormator/Modules/src/main/java/re/parsers/pdf/MettlerParser.java
